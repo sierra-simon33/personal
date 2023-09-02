@@ -1,0 +1,397 @@
+/* styles for screens between 1428px and 1920px wide*/
+@media screen and (min-width: 1428px) and (max-width: 1920px) {
+
+/*Apply to everything*/   
+* {
+width: 100%;
+font-family: Arial, sans-serif;
+background-color: #D3D3D3;
+box-sizing: border-box;
+}
+
+/*The header bar*/
+.logoheaderbar {
+background-color: #003399;
+position: absolute; top: 0;
+height: 150px;
+color: #ffffff;
+font-size: 35px;
+text-align: center;
+text-overflow: ellipsis;
+left: 0;
+text-decoration: none;
+}
+
+/*The header bar*/
+.logoheaderbar h1 {
+background-color: #003399;
+color: #ffffff;
+text-align: center;
+text-overflow: ellipsis;
+}
+
+/*The navigational bar under the header*/
+.topnavbar {
+background-color: #ffffff;
+height: 50px;
+position: absolute;
+top: 150px;
+left: 0;
+width: 100%;
+border-color: #000000;
+border-style: solid;
+border-width: thin;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* Style the unordered list in the navigation bar*/
+.topnavbar ul {
+background-color: #ffffff;
+display: flex; /* This makes the list display as a flex container.*/
+list-style: none; /* This makes the list display as a flex container.*/
+margin: 0;
+padding: 0;
+}
+
+/* Style the links inside the navigation bar*/
+.topnavbar a {
+background-color: #ffffff;
+text-align: center;
+color: #6495ED;
+text-decoration: none;
+font-size: 17px;
+display: inline-block;
+font-size: 20px;
+}
+
+/*The navigational bar under the header: Triggered when the mouse pointer moves over the hyperlink*/
+.topnavbar a:hover {
+text-decoration: underline;
+background-color: #D3D3D3;
+color: #000066;
+}
+
+/* Adjust margin-top of content below nav */
+main {
+margin-top: 240px; /* Height of nav */
+}
+
+/*The quick links section*/
+.quicklinks {
+background-color: #99CCFF;
+width: 175px;
+height: 680px;
+position: absolute; 
+top: 221px;
+left: 0;
+padding: 10px;
+border-color: #000000;
+border-style:solid;
+border-width: thin;
+display: flex;
+text-decoration: none;
+justify-content: center; 
+overflow: hidden;
+padding: 10px;
+box-sizing: border-box;
+}
+
+.quicklinks h2 {
+background-color: #99CCFF;
+text-align: center;
+text-decoration: underline;
+top: 345px;
+font-size: 25px;
+}
+
+.quicklinks ul {
+background-color: #99CCFF;
+position: absolute; 
+top: 75px;
+margin: 0;
+padding: 0;
+}
+
+.quicklinks li {
+background-color: #99CCFF;
+list-style-type: none;
+margin: 10px 0;
+text-align: center;
+overflow: hidden;
+}
+
+/* Style the links inside the quick link section*/
+.quicklinks a {
+color: #003399;
+background-color: #99CCFF;
+overflow: hidden;
+text-decoration: none;
+font-size: 17px;
+display: block;
+box-sizing: border-box;
+font-size: 20px;
+padding: 5px;
+}
+
+/*The quick links section: Triggered when the mouse pointer moves over the hyperlink*/
+.quicklinks a:hover {
+text-decoration: underline;
+background-color: #D3D3D3;
+color: #000066;
+}
+
+/*Announcements Section*/
+.announcements {
+background-color: #ffffff;
+width: 70%;
+height: 220px;
+position: absolute; 
+top: 221px;
+left: 240px;
+padding: 20px;
+border-color: #000000; border-style:solid; border-width: thin;
+display: block;
+box-sizing: border-box;
+}
+
+/*Announcements Section*/
+.announcements h3 {
+background-color: #ffffff;
+box-sizing: border-box;
+padding: 5px;
+text-decoration: underline;
+}
+
+/*Events Section*/
+.events {
+background-color: #ffffff;
+width: 70%;
+height: 420px;
+position: absolute;
+top: 461px;
+left: 240px;
+padding: 20px;
+border-color: #000000;
+border-style:solid;
+border-width: thin;
+display: block;
+box-sizing: border-box;
+}
+
+/*Events Section*/
+.events h3 {
+background-color: #ffffff;
+box-sizing: border-box;
+padding: 5px;
+text-decoration: underline;
+}
+
+/*During work webpage*/
+.gridContainer {
+box-sizing: border-box;
+display: grid;
+grid-template-columns: 200px 200px 200px;
+grid-template-rows: 200px 200px 200px;
+padding: 10px;
+margin-left: 167px;
+grid-row-gap: 20px;
+grid-column-gap: 20px;
+position: absolute; 
+top: 221px;
+text-align: center;
+}
+
+/*defines the style for the items within the grid, including links and images.*/
+.gridItems {
+box-sizing: border-box;
+grid-column: span 1;
+grid-row: span 1;
+padding: 10px;
+border-style: solid;
+overflow: hidden;
+}
+
+/* Style the links inside the grid*/
+.gridItems a {
+color: black;
+text-decoration: none;
+box-sizing: border-box;
+font-size: 20px;
+font-weight: bold;
+}
+
+/* Style the links inside the grid*/
+.gridItems img {
+text-decoration: none;
+box-sizing: border-box;
+padding: 10px;
+}
+
+/*Grid Box: Triggered when the mouse pointer moves over the hyperlink*/
+.gridItems a:hover {
+text-decoration: underline;
+background-color: #D3D3D3;
+color: black;
+opacity: 0.7;
+}
+
+/*Suggestions Page: Suggestion Form*/
+#suggestion-form {
+background-color: lightsteelblue;
+font-kerning: none;
+position: absolute;
+top: 221px;
+margin-left: 250px;
+font-size: 20px;
+border-color: black;
+border-width: thick;
+border-style: solid;
+font-family: Arial, sans-serif;
+padding: 10px;
+max-width: 1200px;
+box-sizing: border-box;
+}
+
+#suggestion-form h1{
+background-color: lightsteelblue;
+text-decoration: underline;
+box-sizing: border-box;
+}
+
+/*Suggestions Page: Suggestion Form - Label*/
+#suggestion-form label {
+display: block;
+background-color: lightsteelblue;
+font-size: 20px;
+font-weight: bold;
+box-sizing: border-box;
+padding: 10px;
+}
+
+/*Suggestions Page: Suggestion Form - Input*/
+#suggestion-form input[type="date"] {
+padding: 10px;
+display: block; 
+font-size: 20px;
+max-width: 170px;
+background-color: white;
+box-sizing: border-box;
+border-color: black;
+border-style: solid;
+border-width: medium;
+}
+
+/*Suggestions Page: Suggestion Form - Input*/
+#suggestion-form input[type="text"] {
+padding: 10px;
+display: block; 
+font-size: 20px;
+max-width: 500px;
+background-color: white;
+box-sizing: border-box;
+border-color: black;
+border-style: solid;
+border-width: medium;
+}
+
+/*Suggestions Page: Suggestion Form - Input*/
+#suggestion-form input[type="email"] {
+padding: 10px;
+display: block; 
+font-size: 20px;
+max-width: 500px;
+background-color: white;
+box-sizing: border-box;
+border-color: black;
+border-style: solid;
+border-width: medium;
+}
+
+
+/*Suggestions Page: Suggestion Form - Input*/
+#suggestion-form textarea {
+padding: 10px;
+background-color: white;
+display: block; 
+font-size: 20px;
+box-sizing: border-box;
+border-color: black;
+border-style: solid;
+border-width: medium;
+}
+
+/*Suggestions Page: Suggestion Form - buttons*/
+#suggestion-form input[type="submit"] {
+background-color: #003399;
+color: #fff;
+border: none;
+padding: 10px;
+cursor: pointer;
+max-width: 100px;
+text-align: center;
+box-sizing: border-box;
+font-size: 20px;
+}
+
+/*Suggestions Page: Suggestion Form - buttons*/
+#suggestion-form input[type="reset"] {
+background-color: #003399;
+color: #fff;
+border: none;
+padding: 10px;
+cursor: pointer;
+max-width: 100px;
+text-align: center;
+box-sizing: border-box;
+font-size: 20px;
+}
+
+#suggestion-form input[type="submit" type="reset"]:hover {
+background-color: #0069d9;
+box-sizing: border-box;
+}
+
+/*Access Code: Form*/
+.accessform{
+background-color: lightblue;
+font-kerning: none;
+position: absolute; top: 170px;
+margin-left: 200px;
+font-size: 40px;
+border-color: black; border-width: thick; border-style: solid;
+overflow: auto;
+font-family: Arial, sans-serif;
+width: 90%;
+height: 90%;
+padding: 10px;
+}
+
+/*Access Code: Form - Label*/
+.accesslabel { 
+float: left; 
+clear: left; 
+display: block;
+width: 100px; 
+padding-right: 10px;
+margin-top: 10px; 
+text-align: right; 
+}
+
+/*Access Code: Form - Input*/
+.accessinput { 
+display: block; 
+margin-top: 10px; 
+}
+
+/*Access Code: Form - Text Area*/
+.accesstextarea { 
+display: block;
+margin-top: 10px;
+}
+
+/*Access Code: Form - buttons*/
+.accessbutton[type="submit" type="reset"] { 
+margin-left: 110px; 
+}
